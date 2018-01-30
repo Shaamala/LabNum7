@@ -15,10 +15,10 @@ public class Lab7 {
 
 		// student information assigned as array
 		// 0 array postion null because no ID equal 0
-		int[] studentID = { 0, 1, 2, 3, 4 };
-		String[] studentName = { "", "Abdul", "Dived", "Ben", "Meo" };
-		String[] studentHomeTown = { "", "Dearborn", "Detroit", "Ann arbr", "Lansing" };
-		String[] studentFavoritFood = { "", "Rice", "Pasta", "Pie", "Chicken" };
+		int[] studentID = { 0, 1, 2, 3, 4, 5};
+		String[] studentName = { "", "Abdul", "Rual", "Nash", "Moe","Ali" };
+		String[] studentHomeTown = { "", "Dearborn", "Detroit", "Ann arbor", "Lansing","Novi" };
+		String[] studentFavoritFood = { "", "Rice", "Pasta", "Shwarma", "Chicken","Pizza" };
 
 		System.out.print("Welcome to our Java class. ");
 
@@ -70,6 +70,7 @@ public class Lab7 {
 					System.out.println("That student does not exist. Please try again.(enter a number 1-20): ");
 					scan.next();
 				}
+				
 				// catch the throw exception
 			} catch (IndexOutOfBoundsException e) {
 				System.out.println("Oops, the student ID out of rang");
